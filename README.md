@@ -2,6 +2,12 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.3.0.
 
+## O que foi feito nesta branch?
+
+Esta branch utiliza o router module - componente do Angular para navegar entre paaginas
+ e também utiliza o HttpClient para fazer requisicoes http Rest 
+
+
 ## Development server
 
 To start a local development server, run:

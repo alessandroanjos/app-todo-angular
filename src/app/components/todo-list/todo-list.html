@@ -8,7 +8,6 @@
     <input type="text" name="nome" id="nome" #todoName>
 </div>
 <button (click)="addTask(todoName.value)">Adicionar</button>
-<button (click)="removeTask()">Remover</button>
 @if (tasks.length === 0) {
 
     <p>Nenhuma tarefa adicionada.</p>
@@ -16,13 +15,14 @@
 } @else {
 <ul>
     @for (item of tasks; track item.id) {
-    <li> {{ item.name}} </li>
+    <li> {{ item.name }} 
+        <span class="close" (click)="removeTask(item.id)" >x</span>
+    </li>
+    
     }
 </ul>
 
 }
-
-
 
 </div>
 
