@@ -8,6 +8,9 @@ Esta branch utiliza o router module - componente do Angular para navegar entre p
  e também utiliza o HttpClient para fazer requisicoes http Rest 
 
 
+Para rodar o server na porta 3000:
+ npx json-server db.json     
+
 ## Development server
 
 To start a local development server, run:
