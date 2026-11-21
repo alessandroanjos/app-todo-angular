@@ -1,0 +1,29 @@
+
+
+<ng-content select="[title]"></ng-content>
+
+<div class="container">
+    <div>
+    <ng-content select="[label]"></ng-content>
+    <input type="text" name="nome" id="nome" #todoName>
+</div>
+<button (click)="addTask(todoName.value)">Adicionar</button>
+<button (click)="removeTask()">Remover</button>
+@if (tasks.length === 0) {
+
+    <p>Nenhuma tarefa adicionada.</p>
+
+} @else {
+<ul>
+    @for (item of tasks; track item.id) {
+    <li> {{ item.name}} </li>
+    }
+</ul>
+
+}
+
+
+
+</div>
+
+
